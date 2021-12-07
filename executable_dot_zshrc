@@ -59,6 +59,8 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/mnt/c/Users/thana/AppData/Local/Programs/Microsoft VS Code/bin:$PATH"
 # meteor
 export PATH=/home/thgeorgiou/.meteor:$PATH
+# Local binaries (ie. pip)
+export PATH="/home/thgeorgiou/.local/bin:$PATH"
 
 # Use spaceship prompt
 eval "$(starship init zsh)"
