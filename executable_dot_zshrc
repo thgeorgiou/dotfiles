@@ -16,18 +16,20 @@ fi
 # Fuck
 eval $(thefuck --alias)
 
-## Some aliases
+# Some aliases
 alias cat=bat
 alias lla=la
 alias publicip='curl icanhazip.com'
 alias explorer='/mnt/c/Windows/explorer.exe'
+alias o='/mnt/c/Windows/explorer.exe'
 
-## Fix unusable LS_Colors
+# Git identities
+alias git_personal='git config user.name "Thanasis Georgiou" && git config user.email "contact@thgeorgiou.com"'
+alias git_noa='git config user.name "Thanasis Georgiou" && git config user.email "ageorgiou@noa.gr"'
+
+# Fix unusable LS_Colors
 LS_COLORS='ow=01;36;40'
 export LS_COLORS
-
-## anaconda3 - initialise
-eval "$(/home/thgeorgiou/Local/miniconda3/bin/conda shell.zsh hook)"
 
 # Don't history commands that start with a space
 export HISTIGNORE=' *'
@@ -37,9 +39,6 @@ export R_LIBS_USER="/home/thgeorgiou/Local/R"
 
 # Disable PS1 changes by python virtualenv
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-
-# Alias o to explorer.exe
-alias o="/mnt/c/Windows/explorer.exe"
 
 # Setup pyenv
 export PYENV_ROOT="$HOME/Local/pyenv"
@@ -53,8 +52,6 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="/home/thgeorgiou/Local/yarn/bin:$PATH"
 # texlive
 export PATH="/home/thgeorgiou/Local/texlive/bin/x86_64-linux:$PATH"
-# poetry
-export PATH="$HOME/.poetry/bin:$PATH"
 # vscode
 export PATH="/mnt/c/Users/thana/AppData/Local/Programs/Microsoft VS Code/bin:$PATH"
 # meteor
@@ -64,3 +61,4 @@ export PATH="/home/thgeorgiou/.local/bin:$PATH"
 
 # Use spaceship prompt
 eval "$(starship init zsh)"
+
