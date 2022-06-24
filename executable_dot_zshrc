@@ -42,7 +42,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 ## PATH Changes
 # yarn
-export PATH="/home/thgeorgiou/Local/yarn/bin:$PATH"
+export PATH="/home/thgeorgiou/Local/yarn/bin:/home/thgeorgiou/Local/npm/bin:$PATH"
 # texlive
 export PATH="/home/thgeorgiou/Local/texlive/bin/x86_64-linux:$PATH"
 # vscode
