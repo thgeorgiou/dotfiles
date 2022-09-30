@@ -1,3 +1,6 @@
+# Locale
+export LC_ALL="en_US.UTF-8"
+
 # SSH Agent
 if [ -z "$SSH_AUTH_SOCK" ]; then
     export SSH_AUTH_SOCK=/tmp/wincrypt-hv.sock
@@ -41,6 +44,7 @@ export R_LIBS_USER="/home/thgeorgiou/Local/R"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 ## PATH Changes
+export PATH="/usr/local/bin:$PATH"
 # yarn
 export PATH="/home/thgeorgiou/Local/yarn/bin:/home/thgeorgiou/Local/npm/bin:$PATH"
 # texlive
