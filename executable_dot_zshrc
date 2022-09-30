@@ -26,6 +26,14 @@ alias publicip='curl icanhazip.com'
 alias explorer='/mnt/c/Windows/explorer.exe'
 alias o='/mnt/c/Windows/explorer.exe'
 
+# Editor
+export EDITOR='micro'
+if ! command -v micro &> /dev/null; then
+    echo "Cannot find micro, using 'vi' as editor"
+    export EDITOR='vi'
+fi
+
+
 # Git identities
 alias git_personal='git config user.name "Thanasis Georgiou" && git config user.email "contact@thgeorgiou.com"'
 alias git_noa='git config user.name "Thanasis Georgiou" && git config user.email "ageorgiou@noa.gr"'
