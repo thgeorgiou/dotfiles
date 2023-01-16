@@ -26,11 +26,19 @@ Host github.com
 
 
 ### NOA
-host noa-workstation
- Hostname 10.201.86.10
+host noa
+ Hostname 192.168.192.155
  User thgeorgiou
  IdentityFile ~/.ssh/id_rsa_noa
  ForwardAgent yes
+
+Host noa-wsl
+ HostName 192.168.192.155
+ User thgeorgiou
+ Port 32123
+ IdentityFile ~/.ssh/id_rsa_noa
+ ForwardAgent yes
+ ForwardX11 yes
  
 host *.react.internal
  User thgeorgiou
