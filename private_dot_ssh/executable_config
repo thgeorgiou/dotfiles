@@ -1,0 +1,60 @@
+## Include config files
+Include config.d/*
+
+### Home
+host xenon
+  HostName 192.168.192.13
+  IdentityFile ~/.ssh/id_rsa
+  User thgeorgiou
+  ForwardAgent true
+  
+host xenon-wsl
+  HostName 192.168.192.13
+  IdentityFile ~/.ssh/id_rsa
+  User thgeorgiou
+  Port 2022
+  ForwardAgent true
+
+host octopi
+  HostName octopi.local
+  User pi
+  
+Host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/id_rsa
+ User git
+
+
+### NOA
+host noa-workstation
+ Hostname 10.201.86.10
+ User thgeorgiou
+ IdentityFile ~/.ssh/id_rsa_noa
+ ForwardAgent yes
+ 
+host *.react.internal
+ User thgeorgiou
+ IdentityFile ~/.ssh/id_rsa_noa
+ ForwardAgent yes
+
+host webserver.react.internal
+ Port 25522
+ 
+host react-gpu
+ User adda
+ Hostname 10.201.14.9
+ 
+host pangea-pi
+ Hostname 192.168.191.81
+ User thgeorgiou
+ IdentityFile ~/.ssh/id_rsa_noa
+ 
+### HPC
+host mn1.bsc.es
+ User pr1ehw01
+ IdentityFile ~/.ssh/id_rsa_bsc
+
+host aris
+  HostName login.aris.grnet.gr
+  User ageorg
+  IdentityFile ~/.ssh/id_rsa_aris
