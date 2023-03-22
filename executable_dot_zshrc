@@ -66,5 +66,10 @@ export PATH="/home/thgeorgiou/.local/bin:$PATH"
 # Use spaceship prompt
 eval "$(starship init zsh)"
 
+# Node stuff from Xenon (Volta version manager and meteor)
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH=/home/thgeorgiou/.meteor:$PATH
+
 # Nice dir colors
 test -r "~/.dircolors" && eval $(dircolors ~/.dircolors)

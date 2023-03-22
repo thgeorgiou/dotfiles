@@ -35,7 +35,8 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'syntax-highlighting' \
-  'python'
+  'python' \
+  'fzf'
 
 #
 # Autosuggestions
@@ -52,7 +53,7 @@ zstyle ':prezto:load' pmodule \
 zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
-# zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 #
 # Git
@@ -174,3 +175,7 @@ zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 # Use conda
 zstyle ':prezto:module:python' skip-virtualenvwrapper-init 'on'
 zstyle ':prezto:module:python' conda-init 'on'
+
+# fzf
+zstyle ':prezto:module:fzf' height '50%'
+zstyle ':prezto:module:fzf' preview 'yes'
